@@ -1,0 +1,19 @@
+.box_redes{
+    text-align: center;
+    display: block;
+    padding: 5px;
+}
+
+a{
+    color: black;
+    text-decoration: none;
+}
+
+.box_redes a:hover{
+    color:aqua;
+    transition: 0.2s;
+}
+
+footer{
+    text-align: center;
+}
