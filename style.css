@@ -4,6 +4,26 @@
     padding: 5px;
 }
 
+
+.header_nav{
+    height: 400px;
+    background-image: url("img/uni.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+}
+
+.header_nav .text_box{
+    background-color: black;
+    width: 100%;
+}
+
+a:hover{
+    transition: 0.4s;
+    color: aquamarine;
+}
+
 a{
     color: black;
     text-decoration: none;

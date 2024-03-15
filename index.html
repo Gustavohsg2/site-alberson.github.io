@@ -11,22 +11,16 @@
 <body>
 
             <!-- Navbar -->
-<nav>
-    <div class="container-fluid bg-dark">
-        <div class="row">        
-            <div class="col-2 p-2">
-                <img class="img-thumbnail d-none d-lg-block" src="img/info.png">
-            </div>
-            <div class="col-8 text-center text-white p-5">
+<header>
+    <div class="container-fluid header_nav d-flex align-self-center justify-content-center">
+        <div class="row ">        
+            <div class="col-12 text-center text-white p-5 text_box my-auto">
                 <h3><strong>Prof. Alberson Wander Sá dos Santos</strong></h3>
                 <p>Colégios Univap Centro</p>
             </div>
-            <div class="col-2 p-2">
-                <img class="img-thumbnail d-none d-lg-block" style="display: block;" src="img/ele.png">
-            </div>
         </div>
     </div>
-</nav>
+</header>
 
     <!-- Fim Nav-->
 
@@ -58,64 +52,252 @@
             <p>Professor de<br>Programação de Computadores <br>| Univap - Universidade do Vale do Paraíba.</p>
             <p>Atuo como coordenador do curso técnico de Informática desde 2006. Também dou aulas de programação de computadores para turmas de 1ª, 2ª e 3ª série do curso de informática.</p>
         </div>
+
+        <!-- Matérias -->
+
         <div class="col-12 col-lg-8 py-3 px-3 d-flex justify-content-evenly flex-wrap">
-            <div class="border card mb-3" style="width: 18rem;">
+            <article class="border card mb-3" style="width: 18rem;">
                 <img src="img/ipc_logo.png" class="card-img-top" alt="">
                 <div class="card-body d-flex flex-column">
                     <h5 class="card-title mb-4">Introdução a Programação de Computadores - IPC<br><br>1° Ano Informática</h5>
-                    <button class="btn btn-primary mt-auto">Vizualizar</button>
+                    <button class="btn btn-primary mt-auto"  data-bs-toggle="modal" data-bs-target="#ipc">Vizualizar</button>
                 </div>
-            </div>
-            <div class="border card mb-3" style="width: 18rem;">
+            </article>
+            <article class="border card mb-3" style="width: 18rem;">
                 <img src="img/ipc_logo.png" class="card-img-top" alt="">
                 <div class="card-body d-flex flex-column">
                     <h5 class="card-title mb-4">Informática Aplicada - IA<br><br>1° Ano Eletrônica</h5>
-                    <button class="btn btn-primary mt-auto">Vizualizar</button>
+                    <button class="btn btn-primary mt-auto" data-bs-toggle="modal" data-bs-target="#ia" >Vizualizar</button>
                 </div>
-            </div>
-            <div class="border card mb-3" style="width: 18rem;">
+            </article>
+            <article class="border card mb-3" style="width: 18rem;">
                 <img src="img/poo.png" class="card-img-top" alt="">
                 <div class="card-body d-flex flex-column">
                     <h5 class="card-title mb-4">Programação Orientada a Objeto I - POO<br><br>2° Ano Informática</h5>
-                    <button class="btn btn-primary mt-auto">Vizualizar</button>
+                    <button class="btn btn-primary mt-auto" data-bs-toggle="modal" data-bs-target="#poo">Vizualizar</button>
                 </div>
-            </div>
-            <div class="border card mb-3" style="width: 18rem;">
+            </article>
+            <article class="border card mb-3" style="width: 18rem;">
                 <img src="img/tcc.jpg" class="card-img-top" alt="">
                 <div class="card-body d-flex flex-column">
                     <h5 class="card-title mb-4">Desenvolvimento de Sistemas - TCC<br><br>3° Ano Informática</h5>
-                    <button class="btn btn-primary mt-auto">Vizualizar</button>
+                    <button class="btn btn-primary mt-auto" data-bs-toggle="modal" data-bs-target="#tcc">Vizualizar</button>
                 </div>
-            </div>
+            </article>
         </div>
     </div>
 </main>
 
     <!-- Fim Main -->
 
-    <table width = "50%">
-        <tr>
-            <td>
-                
-            </td>
-            <td>
+    <!-- Modal -->
 
-            </td>
-            <td>
-                <a href="https://www.facebook.com/alberson.wander/"><img src="imgs/face.jpg" width ="50px"></a>
-            </td>
-        </tr>
-    </table>
-    <br><br>
-    <table width = "50%">
-        <tr>
-            <td>
-                <a href="https://portal.univap.br/DOnline/DOnline/avisos/TDOL303D.tp"><img src="img/prof.jpeg" width ="300px"></a>
-            </td>
-            <td>
-                <a href="https://portal.univap.br/AOnline/AOnline/avisos/T016D.tp"><img src="img/aluno.jpeg" width ="300px"></a>
-            </td>
-        </tr>
-    </table>
+
+        <!-- IPC -->
+    <div class="modal fade" id="ipc" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="ipcLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 class="modal-title fs-5" id="ipcLabel">Introdução a Programação de Computadores - IPC - 1° Ano Informática</h3>
+                </div>
+                <div class="modal-body">
+                    <table class="table">
+                        <thead>
+                            <th class="col">Bimestre</th>
+                            <th class="col">Apostila</th>
+                            <th class="col">Lista</th>
+                            <th class="col">Projeto</th>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row">1°</th>
+                                <td><a href="https://www1.univap.br/alberson/apostilas/ia/aulas_ia_1bi.pptx">Apostila de Variáveis, Escreva(al),<br>leia, atribuição</a></td>
+                                <td><a href="https://www1.univap.br/alberson/exercicios/ipc_le/lista_ipc_1bi.pdf">Lista IPC</a></td>
+                                <td><a href="https://www1.univap.br/alberson/exercicios/ipc_le/projeto_ipc_le_1bi.docx">AT1 - I.P.C.</a></td>
+                            </tr>
+                            <tr>
+                                <th scope="row">2°</th>
+                                <td><a href="https://www1.univap.br/alberson/apostilas/ia/aulas_ia_1bi.pptx">Apostila de Variáveis, Escreva(al),<br>leia, atribuição</a></td>
+                                <td><a href="https://www1.univap.br/alberson/exercicios/ipc_le/lista_ipc_1bi.pdf">Lista IPC</a></td>
+                                <td><a href="https://www1.univap.br/alberson/exercicios/ipc_le/projeto_ipc_le_1bi.docx">AT1 - I.P.C.</a></td>
+                            </tr>
+                            <tr>
+                                <th scope="row">3°</th>
+                                <td><a href="https://www1.univap.br/alberson/apostilas/ia/aulas_ia_1bi.pptx">Apostila de Variáveis, Escreva(al),<br>leia, atribuição</a></td>
+                                <td><a href="https://www1.univap.br/alberson/exercicios/ipc_le/lista_ipc_1bi.pdf">Lista IPC</a></td>
+                                <td><a href="https://www1.univap.br/alberson/exercicios/ipc_le/projeto_ipc_le_1bi.docx">AT1 - I.P.C.</a></td>
+                            </tr>
+                            <tr>
+                                <th scope="row">4°</th>
+                                <td><a href="https://www1.univap.br/alberson/apostilas/ia/aulas_ia_1bi.pptx">Apostila de Variáveis, Escreva(al),<br>leia, atribuição</a></td>
+                                <td><a href="https://www1.univap.br/alberson/exercicios/ipc_le/lista_ipc_1bi.pdf">Lista IPC</a></td>
+                                <td><a href="https://www1.univap.br/alberson/exercicios/ipc_le/projeto_ipc_le_1bi.docx">AT1 - I.P.C.</a></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+        <!-- IA  -->
+
+    <div class="modal fade" id="ia" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="iaLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 class="modal-title fs-5" id="iaLabel">Informática Aplicada - IA - 1° Ano Eletrônica</h3>
+                </div>
+                <div class="modal-body">
+                    <table class="table">
+                        <thead>
+                            <th class="col">Bimestre</th>
+                            <th class="col">Apostila</th>
+                            <th class="col">Lista</th>
+                            <th class="col">Projeto</th>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row">1°</th>
+                                <td><a href="https://www1.univap.br/alberson/apostilas/ia/aulas_ia_1bi.pptx">Apostila de Variáveis, Escreva(al),<br>leia, atribuição</a></td>
+                                <td><a href="https://www1.univap.br/alberson/exercicios/ipc_le/lista_ipc_1bi.pdf">Lista IPC</a></td>
+                                <td><a href="https://www1.univap.br/alberson/exercicios/ipc_le/projeto_ipc_le_1bi.docx">AT1 - I.P.C.</a></td>
+                            </tr>
+                            <tr>
+                                <th scope="row">2°</th>
+                                <td><a href="https://www1.univap.br/alberson/apostilas/ia/aulas_ia_1bi.pptx">Apostila de Variáveis, Escreva(al),<br>leia, atribuição</a></td>
+                                <td><a href="https://www1.univap.br/alberson/exercicios/ipc_le/lista_ipc_1bi.pdf">Lista IPC</a></td>
+                                <td><a href="https://www1.univap.br/alberson/exercicios/ipc_le/projeto_ipc_le_1bi.docx">AT1 - I.P.C.</a></td>
+                            </tr>
+                            <tr>
+                                <th scope="row">3°</th>
+                                <td><a href="https://www1.univap.br/alberson/apostilas/ia/aulas_ia_1bi.pptx">Apostila de Variáveis, Escreva(al),<br>leia, atribuição</a></td>
+                                <td><a href="https://www1.univap.br/alberson/exercicios/ipc_le/lista_ipc_1bi.pdf">Lista IPC</a></td>
+                                <td><a href="https://www1.univap.br/alberson/exercicios/ipc_le/projeto_ipc_le_1bi.docx">AT1 - I.P.C.</a></td>
+                            </tr>
+                            <tr>
+                                <th scope="row">4°</th>
+                                <td><a href="https://www1.univap.br/alberson/apostilas/ia/aulas_ia_1bi.pptx">Apostila de Variáveis, Escreva(al),<br>leia, atribuição</a></td>
+                                <td><a href="https://www1.univap.br/alberson/exercicios/ipc_le/lista_ipc_1bi.pdf">Lista IPC</a></td>
+                                <td><a href="https://www1.univap.br/alberson/exercicios/ipc_le/projeto_ipc_le_1bi.docx">AT1 - I.P.C.</a></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- POO -->
+
+    <div class="modal fade" id="poo" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="pooLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 class="modal-title fs-5" id="pooLabel">Programação Orientada a Objeto - POO - 2° Ano Informática</h3>
+                </div>
+                <div class="modal-body">
+                    <table class="table">
+                        <thead>
+                            <th class="col">Bimestre</th>
+                            <th class="col">Apostila</th>
+                            <th class="col">Lista</th>
+                            <th class="col">Projeto</th>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row">1°</th>
+                                <td><a href="https://www1.univap.br/alberson/apostilas/ia/aulas_ia_1bi.pptx">Apostila de Variáveis, Escreva(al),<br>leia, atribuição</a></td>
+                                <td><a href="https://www1.univap.br/alberson/exercicios/ipc_le/lista_ipc_1bi.pdf">Lista IPC</a></td>
+                                <td><a href="https://www1.univap.br/alberson/exercicios/ipc_le/projeto_ipc_le_1bi.docx">AT1 - I.P.C.</a></td>
+                            </tr>
+                            <tr>
+                                <th scope="row">2°</th>
+                                <td><a href="https://www1.univap.br/alberson/apostilas/ia/aulas_ia_1bi.pptx">Apostila de Variáveis, Escreva(al),<br>leia, atribuição</a></td>
+                                <td><a href="https://www1.univap.br/alberson/exercicios/ipc_le/lista_ipc_1bi.pdf">Lista IPC</a></td>
+                                <td><a href="https://www1.univap.br/alberson/exercicios/ipc_le/projeto_ipc_le_1bi.docx">AT1 - I.P.C.</a></td>
+                            </tr>
+                            <tr>
+                                <th scope="row">3°</th>
+                                <td><a href="https://www1.univap.br/alberson/apostilas/ia/aulas_ia_1bi.pptx">Apostila de Variáveis, Escreva(al),<br>leia, atribuição</a></td>
+                                <td><a href="https://www1.univap.br/alberson/exercicios/ipc_le/lista_ipc_1bi.pdf">Lista IPC</a></td>
+                                <td><a href="https://www1.univap.br/alberson/exercicios/ipc_le/projeto_ipc_le_1bi.docx">AT1 - I.P.C.</a></td>
+                            </tr>
+                            <tr>
+                                <th scope="row">4°</th>
+                                <td><a href="https://www1.univap.br/alberson/apostilas/ia/aulas_ia_1bi.pptx">Apostila de Variáveis, Escreva(al),<br>leia, atribuição</a></td>
+                                <td><a href="https://www1.univap.br/alberson/exercicios/ipc_le/lista_ipc_1bi.pdf">Lista IPC</a></td>
+                                <td><a href="https://www1.univap.br/alberson/exercicios/ipc_le/projeto_ipc_le_1bi.docx">AT1 - I.P.C.</a></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- TCC -->
+
+    <div class="modal fade" id="tcc" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="tccLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 class="modal-title fs-5" id="tccLabel">Desenvolvimento de Sistemas - TCC - 3° Ano Informática</h3>
+                </div>
+                <div class="modal-body">
+                    <table class="table">
+                        <thead>
+                            <th class="col">Bimestre</th>
+                            <th class="col">Apostila</th>
+                            <th class="col">Lista</th>
+                            <th class="col">Projeto</th>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row">1°</th>
+                                <td><a href="https://www1.univap.br/alberson/apostilas/ia/aulas_ia_1bi.pptx">Apostila de Variáveis, Escreva(al),<br>leia, atribuição</a></td>
+                                <td><a href="https://www1.univap.br/alberson/exercicios/ipc_le/lista_ipc_1bi.pdf">Lista IPC</a></td>
+                                <td><a href="https://www1.univap.br/alberson/exercicios/ipc_le/projeto_ipc_le_1bi.docx">AT1 - I.P.C.</a></td>
+                            </tr>
+                            <tr>
+                                <th scope="row">2°</th>
+                                <td><a href="https://www1.univap.br/alberson/apostilas/ia/aulas_ia_1bi.pptx">Apostila de Variáveis, Escreva(al),<br>leia, atribuição</a></td>
+                                <td><a href="https://www1.univap.br/alberson/exercicios/ipc_le/lista_ipc_1bi.pdf">Lista IPC</a></td>
+                                <td><a href="https://www1.univap.br/alberson/exercicios/ipc_le/projeto_ipc_le_1bi.docx">AT1 - I.P.C.</a></td>
+                            </tr>
+                            <tr>
+                                <th scope="row">3°</th>
+                                <td><a href="https://www1.univap.br/alberson/apostilas/ia/aulas_ia_1bi.pptx">Apostila de Variáveis, Escreva(al),<br>leia, atribuição</a></td>
+                                <td><a href="https://www1.univap.br/alberson/exercicios/ipc_le/lista_ipc_1bi.pdf">Lista IPC</a></td>
+                                <td><a href="https://www1.univap.br/alberson/exercicios/ipc_le/projeto_ipc_le_1bi.docx">AT1 - I.P.C.</a></td>
+                            </tr>
+                            <tr>
+                                <th scope="row">4°</th>
+                                <td><a href="https://www1.univap.br/alberson/apostilas/ia/aulas_ia_1bi.pptx">Apostila de Variáveis, Escreva(al),<br>leia, atribuição</a></td>
+                                <td><a href="https://www1.univap.br/alberson/exercicios/ipc_le/lista_ipc_1bi.pdf">Lista IPC</a></td>
+                                <td><a href="https://www1.univap.br/alberson/exercicios/ipc_le/projeto_ipc_le_1bi.docx">AT1 - I.P.C.</a></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
     <footer class="container-fluid"><img src="imgs/final.png" width="100%"></footer>
 </body>
