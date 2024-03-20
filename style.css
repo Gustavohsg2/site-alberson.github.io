@@ -1,10 +1,3 @@
-.box_redes{
-    text-align: center;
-    display: block;
-    padding: 5px;
-}
-
-
 .header_nav{
     height: 400px;
     background-image: url("img/uni.jpg");
@@ -14,9 +7,8 @@
     background-size: 100% 100%;
 }
 
-.header_nav .text_box{
-    background-color: black;
-    width: 100%;
+article {
+    width: 18rem;
 }
 
 a:hover{
@@ -32,8 +24,4 @@ a{
 .box_redes a:hover{
     color:aqua;
     transition: 0.2s;
-}
-
-footer{
-    text-align: center;
 }
